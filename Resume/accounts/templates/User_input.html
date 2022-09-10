@@ -1,0 +1,115 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styleUser_input.css' %}">
+</head>
+
+<body>
+ 
+    <div class="outter">
+        <div class="container">
+
+    <form action="",method="post">
+    
+    
+    <label for="firstname"><b>First Name</b></label>
+    <input type="text" placeholder="Enter First Name" name="firstname">
+    <br><br>
+
+    <label for="lastname"><b>Last Name</b></label>
+    <input type="text" placeholder="Enter Last Name" name="lastname">
+    <br><br>
+
+    <label for="gender"><b>Select your Gender :- </b></label>
+    <input type="radio" id="male"name="gender" value="M">
+    <label for="male"><b>Male</b></label>
+    
+
+    <input type="radio" id="female"name="gender" value="F">
+    <label for="female"><b>Female</b></label> 
+    <br><br>
+    
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email">
+    <br><br>
+
+    <label for="phn"><b>Mobile Number</b></label>
+    <input type="number" placeholder="Enter Mobile Number" name="mobilenumber">
+    <br><br>
+    <b>Write Something about yourself (About Me)</b>
+
+    
+    <br>
+    <textarea rows = "3" cols = "30" name = "description">
+    Enter details here... </textarea><br>
+
+    <br><br>
+
+<table>
+    <tr>
+    <td><b>Course</b></td>
+    <td><select name="Course">
+    <option value="-1" selected>Select</option>
+    <option value="B.Tech">B.TECH</option>
+    <option value="MCA">MCA</option>
+    <option value="MBA">MBA</option>
+    <option value="BCA">BCA</option>
+    </select></td>
+    </tr>
+
+    <tr>
+        <td><b>City</b></td>
+        <td><select name="City">
+        <option value="-1" selected>Select</option>
+        <option value="New Delhi">NEW DELHI</option>
+        <option value="Mumbai">MUMBAI</option>
+        <option value="Goa">GOA</option>
+        <option value="Patna">PATNA</option>
+        </select></td>
+        </tr>
+
+
+        <tr>
+            <td>Qualification <br /><br /><br /></td>
+            <td>
+            <br/>
+            <input type="checkbox" name="HighSchool" value="High School" />
+            High School(10th)<br>
+            <input type="checkbox" name="HigherSchool" value="Higher School" />
+            Higher School(12th)<br/>
+            <input type="checkbox" name="Graduation" value="Graduation" />
+            Graduation(Bachelors)<br/>
+            <input type="checkbox" name="PostGraduation" value="Post Graduation" />
+            Post Graduation(Masters)<br/>
+            <input type="checkbox" name="Phd" value="Phd">
+            Phd
+            </td>
+            </tr>
+    </table>
+
+    <b>Enter your Education Details</b>
+
+    
+    <br>
+    <textarea rows = "5" cols = "60" name = "description">
+    Enter details here. </textarea><br>
+
+    <br>
+    <b>Enter your work Experience (If any)</b>
+    <br>
+    <textarea rows = "5" cols = "60" name = "description">
+         Enter details here. </textarea><br>
+
+
+    <br><br>      
+    </div>
+    </div>
+    {% endblock content %}
+
+</body>   
+</html>

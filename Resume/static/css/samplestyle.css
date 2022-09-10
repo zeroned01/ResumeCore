@@ -1,0 +1,81 @@
+/* *{
+	margin: 0;
+	padding-left: 0;
+	font-family: Century Gothic;
+} */
+
+header{
+	background-image: url('homepic.jpg');
+	height: 100vh;
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+}
+
+/* 
+ul{
+	float: right;
+	list-style-type: none;
+	margin-top: 25px;
+}
+
+ul li{
+	display: inline-block;
+}
+
+ul li a{
+	text-decoration: none;
+	color: #ffff;
+	padding: 5px 20px;
+	border: 1px solid #FFF;
+	transition: 1s ease solid #fff;
+} */
+
+ul li a:hover{
+	background-color: #fff;
+	color: #000;
+}
+/* 
+.title{
+	color: white;
+	padding: 13px 20px;
+	border: 0.5px;
+	background-color: #04AA6D;
+	
+} */
+
+.maintext{
+	color: #ffff;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.maintext h1{
+	color: #ffff;
+	font-size: 70px;
+}
+
+.btn{
+	color: #fff;
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.buildbtn{
+	border: 1px solid #ffff;
+	padding: 10px 30px;
+	color: #fff;
+	text-decoration: none;
+	transition: 0.6s ease;
+}
+
+.buildbtn:hover{
+
+	background-color: #fff;
+	color: #000;
+
+}

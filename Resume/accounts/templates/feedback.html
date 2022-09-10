@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Feedback</title>
+    <link rel="stylesheet" type="text/css" href="stylesfeedback.css">
+</head>
+
+<body>
+    <div>
+    <header>
+        <div class="main">
+            <ul>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'signin' %}">Sign in</a></li>
+                <li><a href="#">Sign up</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contect us</a></li>
+            </ul>
+        </div>
+        <div class="title">
+            <h1>Resume Core</h1>
+        </div>
+    </header>
+    <div class="outter">
+        <div class="container">
+            <h1>Feedback</h1>
+    <p>Enter details and improve us!</p>
+    <hr>
+
+    <form>
+    
+    <label for="name"><b>Name</b></label>
+    <input type="text" placeholder="Enter Name" name="name">
+
+    <label for="like"><b>Would you like our webApp ? </b></label>
+    <input type="radio" id="yes"name="like" value="yes">
+    <label for="male"><b>YES</b></label>
+
+    <input type="radio" id="no"name="like" value="no">
+    <label for="female"><b>NO</b></label> <br>
+    
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email">
+
+    <label for="comment"><b>Any comments or suggestions</b></label>
+    <input type="text" placeholder="Comment" name="comment">
+
+
+    <button type="submit" class="submitbtn">Submit</button>
+    </form>
+  </div>
+
+    </div>
+</body>   
+</html>

@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign In</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/stylesignin.css' %}">
+</head>
+<body>
+    <div class="outter">
+        <div class="container">
+            <center><h1>Login</h1></center>
+            <br>
+    <center><p>Please fill in this form to Login Your account.</p></center>
+    
+    </div>
+    {% comment %} <h2>Log in</h2> {% endcomment %}
+    <form method = "post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="loginbtn">Login</button>
+        </form>
+    </form>
+    
+    <div class="container signin">
+        <p> Click if you <a href="{% url 'password_reset' %}">forgot password</a>.</p>
+
+        <p>New User? <a href="{% url 'signup' %}">Sign up</a>.</p>
+    </div>
+    
+{% endblock %}
+
+</body>
+</html>

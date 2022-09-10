@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Sign Up</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/stylesignup.css' %}">
+    
+</head>
+<body>
+    <div class="outter">
+        <div class="container">
+            <center><h1>Register</h1></center>
+            <br>
+    <center><p>Please fill in this form to create an account.</p></center>
+
+    <h2>Sign up</h2>
+    <form method = "post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        
+
+        {% comment %} {% for field in form %}
+            {{field.label}}
+            {{field}}
+        {% endfor %} {% endcomment %}
+
+    <div class="container signin">
+        <p>Already have an account? <a href="{% url 'login' %}">Sign in</a>.</p>
+    </div>
+    <p>By creating an account you agree to our <a href="{% url 'termsAndCondition'%}">Terms & Privacy</a>.</p>
+
+    <button type="submit" class="registerbtn">Register</button>
+
+    </form>
+    </div>
+   
+{% endblock %}
+</body>
+</html>

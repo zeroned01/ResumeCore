@@ -1,0 +1,115 @@
+*{
+	margin: 0;
+	padding-left: 0;
+	font-family: Century Gothic;
+}
+ 
+header{
+	background-size: cover;
+	background-position: center;
+} 
+ul{
+	float: right;
+	list-style-type: none;
+	margin-top: 25px;
+}
+
+ul li{
+	display: inline-block;
+}
+
+ul li a{
+	text-decoration: none;
+	color: #ffff;
+	padding: 5px 20px;
+	border: 1px solid #FFF;
+	transition: 1s ease solid #fff;
+}
+
+ul li a:hover{
+	background-color: #fff;
+	color: #000;
+}
+
+.title{
+	color: white;
+	padding: 13px 20px;
+	border: 0.5px;
+	background-color: #04AA6D;
+	
+}
+
+.outter{
+	
+	height: 1000px;
+	width: 1000px;
+	padding: 20px 20px;
+	margin-top: 5%;
+	margin-left: 15%;
+	margin-bottom: 10%;
+	border-style: solid;
+	border-color: #008080;
+
+	
+}
+
+
+.container {
+  padding: 16px;
+}
+
+input[type=text], input[type=email], input[type=text] {
+	width: 100%;
+	padding: 15px;
+	margin: 5px 0 22px 0;
+	display: inline-block;
+	border: none;
+	background: #f1f1f1;
+  }
+
+
+
+input[type=text], input[type=password], input[type=number] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password], input[type=number]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+.registerbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity:1;
+}
+
+a {
+  color: dodgerblue;
+}
+
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+

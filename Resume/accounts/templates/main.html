@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>sample</title>
+    <link rel="stylesheet" type="text/css" href={% static "css/samplestyle.css"%}>
+</head>
+<body>
+    <header>
+{% comment %} 
+        <div class="main">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contect us</a></li>
+                <li><a href="#">Sign Out</a></li>
+            </ul>
+        </div>
+        <div class="title">
+            <h1>Resume Core</h1>
+        </div> {% endcomment %}
+
+        <div class="maintext">
+            <h1>Welcome!!!</h1>
+        </div>
+
+        <div class="btn">
+            <a  class="buildbtn" href="{% url 'User_input'%}">Let's Build</a>
+        </div>
+    </header>
+</body>   
+</html>
+
+{% endblock %}
+
