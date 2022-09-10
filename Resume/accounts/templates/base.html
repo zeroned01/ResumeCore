@@ -4,15 +4,16 @@
 <html>
 <head>
     <title>{% block title %}{% endblock %}</title>
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-    <link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}">
+    {% comment %} <link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}"> {% endcomment %}
 </head>
 <body>
-    {% comment %} <nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
+      <nav class="navbar navbar-dark bg-success">
           <a class="navbar-brand" href="{% url 'home' %}">Resume Core</a>
-          {% comment %} <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> {% endcomment %}
-            {% comment %} <span class="navbar-toggler-icon"></span> {% endcomment %}
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          {% comment %} <span class="navbar-toggler-icon"></span> {% endcomment %}
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
@@ -56,7 +57,7 @@
     
       <header>
 
-         <div class="navbar-nav">
+         {% comment %} <div class="navbar-nav">
             <ul>
               {% if user.is_authenticated %}
                 <li> <a href = "{% url 'login_home'%}">Hello, {{ user.username }} </a></li>
@@ -64,7 +65,7 @@
                 <li><a href="{% url 'aboutUs' %}">About</a></li>
                 <li><a href="{% url 'ContactUs' %}">Contact us</a></li>
                 {% if user.is_authenticated %}
-                    {% comment %} <li><a href = "{% url 'login_home' %}"> Home</a></li> {% endcomment %}
+                    <li><a href = "{% url 'login_home' %}"> Home</a></li>
                     <li><a href = "{% url 'password_change'%}">Change password</a></li>
                     <li><a href = "{% url 'logout' %}">Log out</a></li>
 
@@ -74,16 +75,16 @@
                     <li><a href="{% url 'signup' %}">Sign up</a></li>
                 {% endif %}
 
-               
+                {% endcomment %}
                 
                 
-            </ul>
+            {% comment %} </ul>
         </div> 
        <div class="title">
             <h1>Resume Core</h1>
         </div> 
         
-       
+        {% endcomment %}
     </header>
    
     {% block content %}
