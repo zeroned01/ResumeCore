@@ -41,7 +41,7 @@ ul li a:hover{
 
 .outter{
 	
-	height: 1000px;
+	height: 2000px;
 	width: 1000px;
 	padding: 20px 20px;
 	margin-top: 5%;
@@ -49,6 +49,7 @@ ul li a:hover{
 	margin-bottom: 10%;
 	border-style: solid;
 	border-color: #008080;
+	background-color: rgb(255, 255, 255);
 
 	
 }
@@ -56,9 +57,10 @@ ul li a:hover{
 
 .container {
   padding: 16px;
+  height: 50%;
 }
 
-input[type=text], input[type=email], input[type=text] {
+input[type=text], input[type=email], input[type=text], input[type=button] {
 	width: 100%;
 	padding: 15px;
 	margin: 5px 0 22px 0;
@@ -84,7 +86,7 @@ input[type=text]:focus, input[type=password], input[type=number]:focus {
 }
 
 hr {
-  border: 1px solid #f1f1f1;
+  border: 1px solid #08f52f;
   margin-bottom: 25px;
 }
 
@@ -111,5 +113,11 @@ a {
   background-color: #f1f1f1;
   text-align: center;
 }
+
+table{
+	width: 50%;
+}
+
+
 
 

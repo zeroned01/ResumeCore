@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    
+    <link rel="stylesheet" type="text/css" href="{% static 'css/choose.css' %}">
+</head>
+
+<body>
+    
+    
+    <div class="outter">
+        <div class="container">
+            <h1>Choose Templete</h1>
+<hr>
+    <br>
+        <br>
+
+        <a href="{% url 'result1' %}">
+            <img src="{% static 'css/1.jpeg' %}"  width="150" height="200">    
+        </a>&emsp;&emsp;&emsp;
+
+        <a href="{% url 'result2' %}">
+            <img src="{% static 'css/4.jpeg' %}"  width="150" height="200">    
+        </a>&emsp;&emsp;&emsp;
+        <a href="{% url 'result3' %}">
+            <img src="{% static 'css/3.jpeg' %}"  width="150" height="200">    
+        </a>&emsp;&emsp;&emsp;
+
+    
+
+        </div>
+        </div>
+</body>
+{% endblock content %}
+
+</html>
+ 

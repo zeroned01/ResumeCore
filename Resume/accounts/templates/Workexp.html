@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styleUser_input.css' %}">
+</head>
+
+<body>
+    <script>
+        /*var c=0
+        function add(){
+            c+=1
+            html='<input type="number" placeholder="Enter Mobile Number" name="mono'+c+'">\
+     <input type="text" placeholder="Enter Mobile mo" name="mo'+c+'">'
+         var form=document.getElementById("vijo")
+         form.innerHTML += html
+        }*/
+        
+        
+        var c=0
+        function adddd(){
+            c+=1
+            html='<tr>\
+            <td>"Work-Expiriance Detail '+c+'"</td>\
+            <td><input type="text" name="compny'+c+'" placeholder="Enter Company / Industry Name" maxlength="30" /></td>\
+            <td><input type="text" name="start'+c+'" placeholder="Enter starting year" maxlength="30" /></td>\
+            <td><input type="text" name="end'+c+'" placeholder="Enter Ending year" maxlength="30" /></td>\
+            <td><input type="text" name="about'+c+'" placeholder="Enter somthing about expiriance" maxlength="30" /></td>\
+            </tr>'
+            var form=document.getElementById("vijo")
+            form.innerHTML += html
+
+            var cou=document.getElementById("bk")
+            cou.value = c;
+    
+        }
+    </script>
+    <div class="outter" style="height: auto;">
+        <div class="container">
+
+    <form action="{% url 'awards' %}",method="">
+        {% csrf_token %}
+        <label for="edu" style="margin-left: 39%; text-size-adjust: 29%;"><b>Work-Expiriance Details</b></label><br>
+        <br>
+        <hr><br>
+
+        
+        <label for="edu"><b>Total Work-Expiriance Details :-</b></label>
+
+        <input type="text" id="bk" name="bk"  maxlength="30" style="width: 10%; background-color: #fff; text-decoration-color: aliceblue;"/>
+ 
+    
+    {% comment %} <input type="button" onclick="adddd()" text="ADD MORE" style="margin-left: 85%; width: 15%; display: inline-block; background: hsl(244, 93%, 48%); padding: 15px;display: inline-block; cursor: pointer; color: white;"></button><br> {% endcomment %}
+    <button type="button" onclick="adddd()" text="ADD MORE" style="margin-left: 85%; width: 15%; background:  #04AA6D ; padding: 15px; cursor: pointer; color: white; "> + ADD</button><br>
+
+    <br>
+    <br>
+    <div class="vijo" id="vijo">
+
+    </div>
+    
+
+    <button type="submit" class="submitbtn" style="width: 100%; display: inline-block; background: #04AA6D; padding: 15px;display: inline-block; cursor: pointer; color: white;">Submit</button>
+</form>
+</div>
+</div>
+
+{% endblock content %}
+
+</body>
+
+</html>

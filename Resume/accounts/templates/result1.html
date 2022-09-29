@@ -1,0 +1,153 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/style1.css' %}">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+<body>
+	<ul>
+		<li><a href="{% url 'templ' %}">Cancel</a></li>
+		<li><a href="{% url 'conformforF' %}">Download</a></li>
+		</ul>
+
+<div class="main">
+	<div class="left">
+		<br>
+		<!--<div class="profile-img"><img src="image/profile.png">	</div>-->
+		<div class=""></div>
+		
+		
+
+		<div class="box-1">
+			<div class="heading">
+				<p>CONTACT</p>
+			</div>
+			<p class="p1"><i class="material-icons icons1">call</i>{{mo}}</p>
+			<p class="p1"><i class="material-icons icons1">email</i>{{email}}</p>
+			<p class="p1"><i class="material-icons icons1">home</i>{{contry}}</p>
+	
+		</div>
+
+	
+		<div class="box-1">
+			<div class="heading">
+				<p>SKILLS</p>
+			</div>
+			{% for s in s1 %}
+			<p class="p1">{{s}}</p>
+			<!-- <p class="p1">{{s2}}</p>
+			<p class="p1">{{s3}}</p>
+			<p class="p1">{{s4}}</p>
+			<p class="p1">{{s5}}</p>
+			<p class="p1">{{s6}}</p> -->
+			{% endfor %}
+		</div>
+		
+		
+		<br>
+
+		<div class="box-1">
+			<div class="heading">
+				<p>LANGUAGES</p>
+			</div>
+			{% for l in english %}
+			<p class="p1">{{l}}</p>
+			{% endfor %}
+						
+		</div>
+		<br>
+		<div class="box-1">
+			<div class="heading">
+				<p>AWARDS</p>
+			</div>
+
+			<div class="h-div">
+				<!--<i class="material-icons icons2">camera_roll</i>
+				<i class="material-icons icons2">music_note</i>
+				<i class="material-icons icons2">motorcycle</i>
+				<i class="material-icons icons2">border_color</i>-->
+				{% for a in a1 %}
+				<p class="p3">{{a}}</p>
+				{% endfor %}
+			</div>
+			
+		</div>
+
+	</div>
+
+
+	<div class="right">
+		<div class="name-div">
+			<h1>{{name}}</h1>
+			<p>{{intrest}}</p>
+		</div>
+
+		<div class="box-2">
+			<h2>ABOUT ME <i class="material-icons icons3" style="font-size: 28px!important; ">perm_identity</i></h2>
+			<p class="p2">
+				{{about}}
+			</p>
+		</div>
+
+
+
+		<div class="box-2">
+			<h2>EDUCATION <i class="material-icons icons3" >border_color</i></h2>
+			<p class="p3">{{e1s}}-{{e1e}}<span>{{e1sc}}</span></p>
+			<p class="p2">
+				{{e1ex}} <br>
+				Percentage : {{e1p}}
+			</p>
+
+			<p class="p3">{{e2s}}-{{e2e}} <span>{{e2sc}}</span></p>
+			<p class="p2">
+				{{e2ex}}<br>
+				Percentage: {{e2p}}%
+			</p>
+
+			<p class="p3">{{e3s}}-{{e2e}}<span>{{e3sc}}</span></p>
+			<p class="p2">
+				{{e3ex}}<br>
+				Percentage: {{e3p}}
+			</p>
+			
+					</div>
+
+
+		<div class="box-2">
+			<h2>WORK EXPERIENCE <i class="material-icons icons3" >folder</i></h2>
+			<p class="p3">{{w1s}}-{{w1e}} <span>{{w1c}} </span></p>
+			<p class="p2">
+				{{w1i}}
+			</p>
+
+			<p class="p3">{{w2s}}-{{w2e}} <span>{{w2c}} </span></p>
+			<p class="p2">
+				{{w2i}} 
+			</p>
+
+			
+		</div>
+
+		
+
+	</div>
+	
+	
+</div>
+
+
+
+
+</body>
+</html>
+
+{% endblock content %}
