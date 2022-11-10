@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="{% static 'css/stylesignin.css' %}">
 </head>
 <body>
-    <div class="outter">
+    <div class="outter" style="height: auto;">
         <div class="container">
             <center><h1>Login</h1></center>
             <br>
@@ -22,14 +22,19 @@
         {% csrf_token %}
         {{ form.as_p }}
         <button type="submit" class="loginbtn">Login</button>
+        <br>
+        <br>
+      
         </form>
-    </form>
+        <div class="container signin">
+            <p> Click if you <a href="{% url 'password_reset' %}">forgot password</a>.</p>
     
-    <div class="container signin">
-        <p> Click if you <a href="{% url 'password_reset' %}">forgot password</a>.</p>
-
-        <p>New User? <a href="{% url 'signup' %}">Sign up</a>.</p>
-    </div>
+            <p>New User? <a href="{% url 'signup' %}">Sign up</a>.</p>
+        </div>  
+    </form>
+    <br>
+    
+   
     
 {% endblock %}
 

@@ -6,7 +6,7 @@
 
 header{
 	background-image: url('homepic.jpg');
-	height: 100vh;
+	height: auto;
 	width: 100%;
 	background-size: cover;
 	background-position: center;

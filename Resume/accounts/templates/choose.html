@@ -6,9 +6,43 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <style>
+        .outter{
+	
+            height: 500px;
+            width: 1000px;
+            padding: 20px 20px;
+            margin-top: 5%;
+            margin-left: 15%;
+            margin-bottom: 10%;
+            border-style: solid;
+            border-color: #008080;
+         }
+        
+        .img img{
+            height: 300px;
+            width: 500px;
+            padding: 20px 20px;
+            margin-top: 5%;
+            margin-left: 30%;
+            margin-bottom: 10%;
+            border-style: solid;
+            border-color: #008080;
+            background-color: #000;
+            background-image: url('2.jpeg');
+        }
+        
+        .container h1{
+            margin-left: 35%;
+        
+        
+        }
+        
+        
+    </style>
     <title></title>
     
-    <link rel="stylesheet" type="text/css" href="{% static 'css/choose.css' %}">
+    {% comment %} <link rel="stylesheet" type="text/css" href="{% static 'css/choose.css' %}"> {% endcomment %}
 </head>
 
 <body>

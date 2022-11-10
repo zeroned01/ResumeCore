@@ -1,4 +1,4 @@
-*{
+/* *{
 	margin: 0;
 	padding-left: 0;
 	font-family: Century Gothic;
@@ -36,10 +36,11 @@ ul li a:hover{
 	padding: 13px 20px;
 	border: 0.5px;
 	background-color: #04AA6D;
-	
 }
 
-.outter{
+	*/
+
+/* .outter{
 	
 	height: 2000px;
 	width: 1000px;
@@ -53,12 +54,12 @@ ul li a:hover{
 
 	
 }
+ */
 
-
-.container {
+/* .container {
   padding: 16px;
   height: 50%;
-}
+} */
 
 input[type=text], input[type=email], input[type=text], input[type=button] {
 	width: 100%;
