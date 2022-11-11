@@ -84,33 +84,7 @@
 </head>
 
 <body>
-    <script>
-        /*var c=0
-        function add(){
-            c+=1
-            html='<input type="number" placeholder="Enter Mobile Number" name="mono'+c+'">\
-     <input type="text" placeholder="Enter Mobile mo" name="mo'+c+'">'
-         var form=document.getElementById("vijo")
-         form.innerHTML += html
-        }*/
-        
-        
-        var c=7
-        function adddd(){
-            c+=1
-            html='<tr>\
-            <td>'+c+'</td>\
-            <td><input type="text" name="school'+c+'" placeholder="Enter Schoole / college Name" maxlength="30" /></td>\
-            <td><input type="text" name="cource'+c+'" placeholder="Enter Cource" maxlength="30" /></td>\
-            <td><input type="text" name="start'+c+'" placeholder="Enter starting year" maxlength="30" /></td>\
-            <td><input type="text" name="end'+c+'" placeholder="Enter Ending year" maxlength="30" /></td>\
-            <td><input type="text" name="pr'+c+'" placeholder="Enter PR or Percentage or ..." maxlength="30" /></td>\
-            </tr>'
-            var form=document.getElementById("vijo")
-            form.innerHTML += html
-    
-        }
-    </script>
+
  
     <div class="outter" style="height: auto;">
         <div class="container">
@@ -120,24 +94,24 @@
         <label for="edu" style="margin-left: 39%; text-size-adjust: 29%;"><b>Personal Details</b></label><br>
         <br>
         <hr><br>
-    <input type="text" placeholder="Enter First Name" name="Fname">
+    <input type="text" placeholder="Enter First Name" name="Fname" required>
     <br><br>
-    <input type="text" placeholder="Enter Last Name" name="Lname">
-    <br><br>
-
-    <input type="text" placeholder="Enter Area of Intrest" name="intrest">
+    <input type="text" placeholder="Enter Last Name" name="Lname" required>
     <br><br>
 
+    <input type="text" placeholder="Enter Area of Intrest" name="intrest" required>
+    <br><br>
 
-    <input type="number" placeholder="Enter Mobile Number" name="mono">
+
+    <input type="number" placeholder="Enter Mobile Number" name="mono" maxlength=10 required>
  
-    <input type="text" placeholder="Enter Email" name="email">
+    <input type="text" placeholder="Enter Email" name="email" required>
 
-    <input type="text" placeholder="Enter Contry" name="contry">
+    <input type="text" placeholder="Enter Contry" name="contry" required>
 
 
 
-    <input type="text" placeholder=" Enter Languages (EX :- English, Hindi, ...)" name="lang">
+    <input type="text" placeholder=" Enter Languages (EX :- English, Hindi, ...)" name="lang" required>
 
     
 
@@ -146,7 +120,7 @@
     
     <label for="about"><b>ABOUT ME</b></label><br>
 
-    <textarea id="about" name="about" rows="4" cols="50" style="background-color: #f1f1f1;"></textarea>
+    <textarea id="about" name="about" rows="4" cols="50" style="background-color: #f1f1f1;"></textarea required>
   <br><br>
 
 

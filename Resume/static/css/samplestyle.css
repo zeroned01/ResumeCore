@@ -4,45 +4,18 @@
 	font-family: Century Gothic;
 } */
 
-header{
+body{
 	background-image: url('homepic.jpg');
 	height: auto;
 	width: 100%;
-	background-size: cover;
+	/* background-size: cover; */
 	background-position: center;
 }
-
-/* 
-ul{
-	float: right;
-	list-style-type: none;
-	margin-top: 25px;
-}
-
-ul li{
-	display: inline-block;
-}
-
-ul li a{
-	text-decoration: none;
-	color: #ffff;
-	padding: 5px 20px;
-	border: 1px solid #FFF;
-	transition: 1s ease solid #fff;
-} */
 
 ul li a:hover{
 	background-color: #fff;
 	color: #000;
 }
-/* 
-.title{
-	color: white;
-	padding: 13px 20px;
-	border: 0.5px;
-	background-color: #04AA6D;
-	
-} */
 
 .maintext{
 	color: #ffff;

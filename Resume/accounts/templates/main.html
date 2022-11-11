@@ -8,7 +8,8 @@
 <html>
 <head>
     <title>sample</title>
-    <link rel="stylesheet" type="text/css" href={% static "css/samplestyle.css"%}>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/samplestyle.css' %}">
+
 </head>
 <body>
     <header>
@@ -26,12 +27,12 @@
         </div> {% endcomment %}
         <div class = "main">
         <div class="maintext">
-            <h1>Welcome!!!</h1>
+            <h1 style="color: blue;">Welcome!</h1>
         </div>
 
         <div class="btn">
             
-            <a  class="buildbtn" href="{% url 'edu'%}" style = "background-color:#04AA6D;">Let's Build</a>
+            <a  class="buildbtn" href="{% url 'edu'%}" style = "background-color:blueviolet;">Let's Build</a>
         </div>
     </div>
 </header>

@@ -18,10 +18,14 @@
 <body>
 
 	
-	<ul>
-		<li><a href="{% url 'templetss' %}">Cancel</a></li>
-		<li><a href="{% url 'conformforS' %}">Download</a></li>
-		</ul>
+	<ul style="float: right; list-style-type: none; margin-top: 25px;">
+
+		<li style="display: inline-block;">
+			<a href="{% url 'conformforF' %}" style="text-decoration: none; color: #ffff; padding: 5px 20px; border: 1px solid #FFF; transition: 1s ease solid #fff;">Download</a></li>
+			<a href="{% url 'templetss' %}" style="text-decoration: none; color: #ffff; padding: 5px 20px; border: 1px solid #FFF; transition: 1s ease solid #fff;">Cancel</a>
+
+	</li>
+	</ul>
 	<div class="box-outer">
 	<div class="resume-box">
 		<div class="box-1">

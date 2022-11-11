@@ -86,25 +86,16 @@
 
 <body>
     <script>
-        /*var c=0
-        function add(){
-            c+=1
-            html='<input type="number" placeholder="Enter Mobile Number" name="mono'+c+'">\
-     <input type="text" placeholder="Enter Mobile mo" name="mo'+c+'">'
-         var form=document.getElementById("vijo")
-         form.innerHTML += html
-        }*/
-        
-        
+ 
         var c=0
         function adddd(){
             c+=1
             html='<tr>\
             <td>"Work-Expiriance Detail '+c+'"</td>\
-            <td><input type="text" name="compny'+c+'" placeholder="Enter Company / Industry Name" maxlength="30" /></td>\
-            <td><input type="text" name="start'+c+'" placeholder="Enter starting year" maxlength="30" /></td>\
-            <td><input type="text" name="end'+c+'" placeholder="Enter Ending year" maxlength="30" /></td>\
-            <td><input type="text" name="about'+c+'" placeholder="Enter somthing about expiriance" maxlength="30" /></td>\
+            <td><input type="text" name="compny'+c+'" placeholder="Enter Company / Industry Name" maxlength="30" /required></td>\
+            <td><input type="text" name="start'+c+'" placeholder="Enter starting year" maxlength="30" /required></td>\
+            <td><input type="text" name="end'+c+'" placeholder="Enter Ending year" maxlength="30" /required></td>\
+            <td><input type="text" name="about'+c+'" placeholder="Enter somthing about expiriance" maxlength="30" /required></td>\
             </tr>'
             var form=document.getElementById("vijo")
             form.innerHTML += html

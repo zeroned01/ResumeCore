@@ -12,6 +12,7 @@ from django.http import HttpResponse
 from django.contrib.staticfiles import finders
 from django.conf import settings
 import os
+from accounts.models import Contect
 # Create your views here.
 
 class valuess:
@@ -51,10 +52,23 @@ def password_change(request):
 
 
 def aboutUs(request):
-    return render(request, 'aboutUs.html')
+    return render(request, 'aboutUs.html')  
 
 
 def ContactUs(request):
+
+    if request.method=="POST":
+        name=request.POST["name"]
+        email=request.POST["email"]
+        phone=request.POST["phone"]
+        qu=request.POST["querry"]
+
+
+        ins=Contect(name=name,email=email,phone=phone,qerry=qu)
+        ins.save()
+
+        print("okokokookookokokokoko")
+
     return render(request, 'ContactUs.html')
 
 

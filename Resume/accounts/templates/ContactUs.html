@@ -10,45 +10,86 @@
     <link rel="stylesheet" type="text/css" href="{% static 'css/styleAboutUs.css'%}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<center><body>
+<body>
+
+    <style>
+        input[type=text], input[type=email], input[type=text], input[type=button] {
+            width: 100%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            display: inline-block;
+            border: none;
+            background: #f1f1f1;
+          }
+        
+        
+        
+        input[type=text], input[type=password], input[type=number] {
+          width: 100%;
+          padding: 15px;
+          margin: 5px 0 22px 0;
+          display: inline-block;
+          border: none;
+          background: #f1f1f1;
+        }
+        
+        input[type=text]:focus, input[type=password], input[type=number]:focus {
+          background-color: #ddd;
+          outline: none;
+        }
+        
+    </style>
     <header>
     
-    <div class="outter" style = "height: auto; width: 1000px; padding: 20px 20px; margin-left: 0%; margin-top: 5%; margin-bottom: 10%;
+    <div class="outter" style = "height: auto; width: 1000px; padding: 20px 20px; margin-left: 15%; margin-top: 5%; margin-bottom: 10%;
     border-color: #008080; border-style: solid;">
         <div class="container">
-            <h1>Contact Us</h1>
-    <hr>
+            <h1 style="margin-left: 40%;">Contact Us</h1>
+    <hr style="border: 1px solid #08f52f; margin-bottom: 25px;">
 
-    <p><h2>Catch us on </h2>
-        <li><a href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" class="fa fa-instagram"></a>&nbsp;&nbsp;</li>
-        <a href="www.instagram.com">www.instagram.com</a>
-        <br><br>
+    <div class="vijo1" style="margin-left: 0%;">
+        <form method="post" action="{% url 'ContactUs' %}">
+            {% csrf_token %}
+            <input type="text" placeholder="Enter Name" name="name"><br><br>
+            <input type="text" placeholder="Enter Email" name="email" required><br><br>
+            <input type="text" placeholder="Enter phone No" name="phone"><br><br>
+            <input type="text" placeholder="Enter Querry" name="querry" required><br><br>
+            <button type="submit" class="submitbtn" style="width: 100%; display: inline-block; background: #04AA6D; padding: 15px;display: inline-block; cursor: pointer; color: white;">Submit</button>
+           <br>
+           <br>
+        </form>
+    </div>
+
+        
+    &nbsp;&nbsp;  &nbsp;&nbsp;  &nbsp;&nbsp;  &nbsp;&nbsp;  &nbsp;&nbsp;  &nbsp;&nbsp;  &nbsp;&nbsp;  <a href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" class="fa fa-instagram"></a>&nbsp;&nbsp;   
+        <a href="www.instagram.com">www.instagram.com</a>&nbsp;&nbsp;
+        
 
         <a href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" class="fa fa-linkedin"></a>&nbsp;&nbsp;
-        <a href="www.linked.in.com">www.linkedin.com</a>
-        <br><br>
+        <a href="www.linked.in.com">www.linkedin.com</a>&nbsp;&nbsp;
+        
 
         <a href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" class="fa fa-youtube"></a>&nbsp;&nbsp;
-        <a href="www.youtube.com">www.youtube.com</a>
-        <br><br>
+        <a href="www.youtube.com">www.youtube.com</a>&nbsp;&nbsp;
+        
 
         <a href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" class="fa fa-google"></a>&nbsp;&nbsp;
-        <a href="www.google.com">www.google.com</a>
-        <br><br>
+        <a href="www.google.com">www.google.com</a><br><br>
+        
 
-        <a href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" class="fa fa-reddit"></a>&nbsp;&nbsp;
-        <a href="www.reddit.com">www.reddit.com</a> 
-        <br> <br>      
+    
 
 
-        <p><b> Other Addresses <br></b>
+        <p style="margin-left: 39%;"><b> Other Addresses <br></b>
             Email-id : resumecore@gmail.com<br>
             Mobile-No. : 8577552263 <br>
-            Headqauters : Andheri , Mumbai <br> 
+            Headqauters : Ahmedabad <br> 
             </p>
-</div>
+        </div>
+
+       
 <div class="container signin">
-</div></center>
+</div>
 </header>
   </div>
 
